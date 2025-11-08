@@ -11,7 +11,6 @@
 <body>
   <main class="wrap">
 
-    <!-- HEADER -->
     <header class="hero">
       <div class="hero-bg"></div>
       <div class="hero-inner">
@@ -21,7 +20,6 @@
       </div>
     </header>
 
-    <!-- DETALLES -->
     <section class="section">
       <h3><span class="material-symbols-outlined">event</span> ¿Cuándo?</h3>
       <p><strong>7 de diciembre de 2025 — 21:00 hs (Argentina)</strong></p>
@@ -31,19 +29,16 @@
       <p class="muted">1727 Gualeguay, Francisco Álvarez, Moreno</p>
 
       <a class="btn btn-primary" href="https://www.google.com/maps?q=1727+Gualeguay,+Francisco+Alvarez,+Moreno" target="_blank">Cómo llegar</a>
-
-      <!-- Nueva división debajo del botón -->
-      
     </section>
-     <hr class="divider">
-    <!-- FRASE -->
+
+    <hr class="divider">
+
     <section class="section phrase-light">
       <p class="poetic">Vivamos el momento, el sol está saliendo.<br>Sagrado este momento y <strong>nada más</strong>.</p>
     </section>
 
     <hr class="divider">
 
-    <!-- DRESS CODE -->
     <section class="section">
       <h3><span class="material-symbols-outlined">checkroom</span> Dress Code</h3>
       <p><strong>ELEGANTE</strong></p>
@@ -52,7 +47,6 @@
 
     <hr class="divider">
 
-    <!-- REGALOS -->
     <section class="section gray-bg">
       <h3><span class="material-symbols-outlined">card_giftcard</span> Regalos</h3>
       <p class="muted">Tu presencia es lo más importante 💕</p>
@@ -61,16 +55,14 @@
 
     <hr class="divider">
 
-    <!-- ÁLBUM -->
     <section class="section" id="galeria">
-      <h3><span class="material-symbols-outlined">photo_camera</span><strong> VOS y Azu</strong></h3>
-      <p class="muted">Compartí tus fotos con Azu</p>
-      <a class="btn" href="https://forms.gle/AhfYSToWawLYJHoJ8" target="_blank">Subir fotos</a>
+      <h3><span class="material-symbols-outlined">photo_camera</span> <strong>VOS</strong> y Azu</h3>
+      <p class="muted">Compartí las fotos que tengas con Azu</p>
+      <a class="btn btn-primary" href="https://forms.gle/AhfYSToWawLYJHoJ8" target="_blank">Subir fotos</a>
     </section>
 
     <hr class="divider">
 
-    <!-- GALERÍA ANIMADA -->
     <section class="section moving-gallery">
       <h3><span class="material-symbols-outlined">collections</span> MOMENTOS EN ESTOS XV AÑOS</h3>
       <div class="carousel">
@@ -89,7 +81,6 @@
 
     <hr class="divider">
 
-    <!-- CONFIRMACIÓN -->
     <section class="section gray-bg" id="rsvp">
       <h3><span class="material-symbols-outlined">how_to_reg</span> Confirmación de asistencia</h3>
       <p class="muted">Completá el siguiente formulario</p>
@@ -113,29 +104,6 @@
 
   </main>
 
-  <!-- Modal transferencia -->
-  <div id="transferModal" class="modal">
-    <div class="modal-overlay"></div>
-    <div class="modal-content">
-      <button class="modal-close" id="closeModal">✕</button>
-      <h4>Datos de transferencia</h4>
-      <p><strong>Alias:</strong> miel.nada.cuna.mp</p>
-      <p><strong>CBU:</strong> 00000031000346943265</p>
-      <p><strong>Titular:</strong> Guillermo Orellana</p>
-      <p><strong>DNI:</strong> 27028023</p>
-      <button id="copyTransfer" class="btn btn-outline">Copiar datos</button>
-    </div>
-  </div>
-
-  <!-- Modal resultado EmailJS -->
-  <div id="resultModal" class="modal">
-    <div class="modal-overlay"></div>
-    <div class="modal-content modal-light">
-      <button class="modal-close" id="closeResult">✕</button>
-      <h4 id="resultTitle">🎉 ¡Tu confirmación fue enviada con éxito!</h4>
-      <p id="resultText">Gracias por confirmar tu asistencia 💕 ¡Nos vemos en la fiesta!</p>
-      <button id="closeResult2" class="btn btn-secondary">Cerrar</button>
-    </div>
-  </div>
+  <script src="script.js"></script>
 </body>
 </html>
