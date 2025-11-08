@@ -1,1 +1,127 @@
-PLACEHOLDER_HTML
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AZU — Mis XV</title>
+  <!-- Fuente para títulos -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Fuente para cursiva (nueva) -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Iconos -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+  <main class="wrap">
+
+    <header class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-inner">
+        <h1 class="hero-title">AZU</h1>
+        <p class="hero-sub">Mis XV</p>
+        <div id="countdown" class="countdown">--</div>
+      </div>
+    </header>
+    
+    <!-- NUEVA SECCIÓN: FRASE con fondo gris claro -->
+    <section class="section light-gray-bg phrase-section">
+      <p class="cursive-phrase">
+        Vivamos el momento, el sol esta saliendo<br>
+        Sagrado este momento y **nada más**
+      </p>
+    </section>
+    
+    <!-- SECCIÓN DE EVENTO (Cuándo/Dónde) -->
+    <section class="section">
+      <h3><span class="material-symbols-outlined">event</span> ¿Cuándo?</h3>
+      <p><strong>7 de diciembre de 2025 — 21:00 hs (Argentina)</strong></p>
+      <hr class="divider">
+      <h3><span class="material-symbols-outlined">place</span> ¿Dónde?</h3>
+      <p><strong>SALÓN CIDANELIA</strong></p>
+      <!-- Dirección de la fiesta -->
+      <p class="muted">1727 Gualeguay, Francisco Álvarez, Moreno.</p>
+      
+      <!-- BOTÓN CÓMO LLEGAR (Google Maps) -->
+      <a class="btn btn-primary" 
+         href="https://maps.app.goo.gl/9Vw8X12vUq2N3c2y9" 
+         target="_blank"
+         aria-label="Ver ubicación en Google Maps">
+        <span class="material-symbols-outlined">directions_car</span>
+        CÓMO LLEGAR
+      </a>
+    </section>
+
+    <!-- SECCIÓN DE FOTOS (Carrusel) -->
+    <section class="section">
+      <h3><span class="material-symbols-outlined">photo_library</span> Fotos</h3>
+      <div class="carousel-container">
+        <!-- El JS se encargará de duplicar estas imágenes para el carrusel infinito -->
+        <div class="carousel-track" id="carouselTrack">
+          <!-- Imágenes inyectadas por JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE REGALOS -->
+    <section class="section gray-bg">
+      <h3><span class="material-symbols-outlined">redeem</span> Regalos</h3>
+      <p class="muted">Lo más importante es tu presencia, pero si querés hacer un regalo, podés colaborar:</p>
+      <button id="openTransfer" class="btn btn-secondary">Datos de Transferencia</button>
+    </section>
+
+    <!-- SECCIÓN DE INFORMACIÓN ADICIONAL -->
+    <section class="section">
+      <h3><span class="material-symbols-outlined">info</span> Información</h3>
+      <p><strong>Código de Vestimenta:</strong> Elegante</p>
+      <p class="muted">**Importante:** no ir de azul, rojo o blanco.</p>
+      <hr class="divider">
+      <p>Confirmá tu asistencia y consultá lo que necesites:</p>
+      <a class="btn btn-whatsapp" href="https://wa.me/5491144086804" target="_blank"><span class="material-symbols-outlined">chat</span> Consultar por WhatsApp</a>
+    </section>
+
+    <!-- SECCIÓN DE CONFIRMACIÓN (RSVP) -->
+    <section class="section gray-bg">
+      <h3><span class="material-symbols-outlined">favorite</span> Confirmación de Asistencia (RSVP)</h3>
+      <p>¡Ayudame a organizar este día especial confirmando tu presencia!</p>
+      <form id="rsvpForm" class="rsvp-form">
+        <input type="text" name="name" placeholder="Tu Nombre y Apellido" required />
+        <textarea name="message" rows="3" placeholder="Mensaje (opcional)"></textarea>
+        <button type="submit" class="btn btn-primary">ENVIAR CONFIRMACIÓN</button>
+      </form>
+    </section>
+
+
+    <footer class="footer">
+      <p>“El éxito de la fiesta depende de la gente que te rodees en ese momento.”</p>
+    </footer>
+
+  </main>
+
+  <!-- Modals (los mismos) -->
+  <div id="transferModal" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal">✕</button>
+      <h4>Datos de transferencia</h4>
+      <p><strong>Alias:</strong> miel.nada.cuna.mp</p>
+      <p><strong>CBU:</strong> 00000031000346943265</p>
+      <p><strong>Titular:</strong> Guillermo Orellana</p>
+      <p><strong>DNI:</strong> 27028023</p>
+      <button id="copyTransfer" class="btn btn-outline">Copiar datos</button>
+    </div>
+  </div>
+
+  <div id="resultModal" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content modal-light">
+      <button class="modal-close" id="closeResult">✕</button>
+      <h4 id="resultTitle">🎉 ¡Tu confirmación fue enviada con éxito!</h4>
+      <p id="resultText">Gracias por confirmar tu asistencia 💕 ¡Nos vemos en la fiesta!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
