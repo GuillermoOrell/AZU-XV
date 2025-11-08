@@ -240,7 +240,7 @@ h3 {
 /* ANIMACIÓN HORIZONTAL INFINITA */
 @keyframes scroll {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  100% { transform: translateX(-5%); }
 }
 
 /* Pausa en interacción táctil o mouse */
