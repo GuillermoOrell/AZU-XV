@@ -275,7 +275,7 @@ h3 {
 @media (max-width: 768px) {
   .carousel-track img {
     width: 300px;
-    height: 180px;
+    height: 300px;
   }
   .carousel-track {
     animation: scroll 20s linear infinite;
