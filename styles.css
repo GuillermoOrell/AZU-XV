@@ -54,7 +54,7 @@ body {
 
 .carousel-track {
   display: flex;
-  gap: 10px;
+  gap: 7px;
   animation: scroll 50s linear infinite;
 }
 
