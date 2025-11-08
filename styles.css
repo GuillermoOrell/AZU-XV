@@ -17,7 +17,7 @@ h3{font-family:'Playfair Display',serif;display:flex;align-items:center;justify-
 .btn-outline{border:1px solid #ccc;background:transparent;color:var(--primary)}
 .btn-whatsapp{background:#25D366;color:#fff;display:inline-flex;align-items:center;gap:6px;margin-top:24px}
 .hero{text-align:center;position:relative;min-height:55vh;display:flex;align-items:center;justify-content:center}
-.hero-bg{position:absolute;inset:0;background:url('Azu_bg.jpg' 'text=AZU+XV')center/cover;opacity:.35}
+.hero-bg{position:absolute;inset:0;background:url('Azu_bg.jpg')center/cover;opacity:.35; }
 .hero-inner{position:relative}
 .hero-title{font-family:'Playfair Display',serif;font-size:72px;margin:0;color:white;text-shadow:0 0 6px rgba(0,0,0,0.6)}
 .hero-sub{margin:6px 0 12px;color:white;text-shadow:0 0 6px rgba(0,0,0,0.6);font-size:28px}
