@@ -210,7 +210,7 @@ h3 {
 .carousel-track {
   display: flex;
   gap: 10px;
-  animation: scroll 120s linear infinite;
+  animation: scroll 30s linear infinite;
   will-change: transform;
 }
 
@@ -277,7 +277,7 @@ h3 {
     height: 180px;
   }
   .carousel-track {
-    animation: scroll 60s linear infinite;
+    animation: scroll 20s linear infinite;
   }
 }
 
