@@ -218,7 +218,7 @@ h3 {
 /* IMÁGENES */
 .carousel-track img {
   width: 350px;
-  height: 3500px;
+  height: 350px;
   object-fit: cover;
   border-radius: 10px;
   flex-shrink: 0;
@@ -240,7 +240,7 @@ h3 {
 /* ANIMACIÓN HORIZONTAL INFINITA */
 @keyframes scroll {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-200%); }
+  100% { transform: translateX(-250%); }
 }
 
 /* Pausa en interacción táctil o mouse */
@@ -274,8 +274,8 @@ h3 {
 /* 🔧 Ajustes responsive */
 @media (max-width: 768px) {
   .carousel-track img {
-    width: 300px;
-    height: 300px;
+    width: 180px;
+    height: 180px;
   }
   .carousel-track {
     animation: scroll 20s linear infinite;
