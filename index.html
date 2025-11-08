@@ -28,11 +28,10 @@
       <p><strong>CIDANELIA</strong></p>
       <p class="muted">1727 Gualeguay, Francisco Álvarez, Moreno</p>
 
-      <a class="btn btn-primary" href="https://www.google.com/maps?q=1727+Gualeguay,+Francisco+Alvarez,+Moreno" target="_blank">Cómo llegar</a>
-    </section>
+      <a class="btn btn-primary" href="https://www.google.com/maps/place/Cidanelia+Eventos/@-34.6430173,-58.88266,17z/data=!4m14!1m7!3m6!1s0x95bc9306ae83456d:0xf3d971c1074b23f0!2sCidanelia+Eventos!8m2!3d-34.6430218!4d-58.8780466!16s%2Fg%2F11h557c5rv!3m5!1s0x95bc9306ae83456d:0xf3d971c1074b23f0!8m2!3d-34.6430218!4d-58.8780466!16s%2Fg%2F11h557c5rv?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D" target="_blank">Cómo llegar</a>
 
-    <hr class="divider">
-
+      </section>
+     <hr class="divider">
     <section class="section phrase-light">
       <p class="poetic">Vivamos el momento, el sol está saliendo.<br>Sagrado este momento y <strong>nada más</strong>.</p>
     </section>
@@ -56,8 +55,8 @@
     <hr class="divider">
 
     <section class="section" id="galeria">
-      <h3><span class="material-symbols-outlined">photo_camera</span> <strong>VOS</strong> y Azu</h3>
-      <p class="muted">Compartí las fotos que tengas con Azu</p>
+      <h3><span class="material-symbols-outlined">photo_camera</span><strong> VOS </strong>y Azu</h3>
+      <p class="muted">Compartí tus fotos con Azu!</p>
       <a class="btn btn-primary" href="https://forms.gle/AhfYSToWawLYJHoJ8" target="_blank">Subir fotos</a>
     </section>
 
@@ -104,6 +103,30 @@
 
   </main>
 
+  <div id="transferModal" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal">✕</button>
+      <h4>Datos de transferencia</h4>
+      <p><strong>Alias:</strong> miel.nada.cuna.mp</p>
+      <p><strong>CBU:</strong> 00000031000346943265</p>
+      <p><strong>Titular:</strong> Guillermo Orellana</p>
+      <p><strong>DNI:</strong> 27028023</p>
+      <button id="copyTransfer" class="btn btn-outline">Copiar datos</button>
+    </div>
+  </div>
+
+  <div id="resultModal" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content modal-light">
+      <button class="modal-close" id="closeResult">✕</button>
+      <h4 id="resultTitle">🎉 ¡Tu confirmación fue enviada con éxito!</h4>
+      <p id="resultText">Gracias por confirmar tu asistencia 💕 ¡Nos vemos en la fiesta!</p>
+      <button id="closeResult2" class="btn btn-secondary">Cerrar</button>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
