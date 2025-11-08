@@ -34,25 +34,15 @@ document.getElementById('copyTransfer').onclick=()=>{
 };
 
 // email form
-
 const form=document.getElementById('rsvpForm');
-
 form.onsubmit=e=>{
-
  e.preventDefault();
-
  const name=form.name.value.trim(),msg=form.message.value.trim();
-
  if(!name){alert('Ingresá tu nombre');return;}
-
  emailjs.send('service_9twukxl','template_rmg8f37',{from_name:name,message:msg,to_email:'guillermoorellana@gmail.com'})
-
  .then(()=>showResult('🎉 ¡Tu confirmación fue enviada con éxito!','Gracias por confirmar tu asistencia 💕 ¡Nos vemos en la fiesta!'))
-
  .catch(()=>showResult('❌ Error','No se pudo enviar, intentá nuevamente.'));
-
  form.reset();
-
 };
 
 // result modal
